@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  overflow: hidden;
+  display: flex;
+  background-color: black;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: hsl(0, 0%, 95%);
+  text-align: center;
+  padding: 16px 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: row;
+}
+img {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.first-box {
+  background-color: hsl(31, 77%, 52%);
+  padding: 2em;
+  width: 100%;
+  padding-bottom: 30px;
+  border-radius: 5px 0px 0px 5px;
+}
+.second-box {
+  background-color: hsl(184, 100%, 22%);
+  padding: 2em;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.third-box {
+  background-color: hsl(179, 100%, 13%);
+  padding: 2em;
+  width: 100%;
+  padding-bottom: 30px;
+  border-radius: 0px 5px 5px 0px;
+}
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-bottom: 60px;
+}
+.one {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
+  padding: 10px 30px;
+  margin: 0;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.two {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
+  padding: 10px 30px;
+  margin: 0;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.three {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
+  padding: 10px 30px;
+  margin: 0;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 25px;
+  display: block;
+  cursor: pointer;
+}
+.one:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.two:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+.three:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid hsl(0, 0%, 95%);
+}
+/* desktop styling */
+@media screen and (max-width: 1440px) {
+  body {
+    width: 100%;
+  }
+}
+/* mobile styling */
+@media screen and (max-width: 375px) {
+  body {
+    width: 100%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding-top: 25px;
+    
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    
+  }
+  .first-box, .third-box {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .third-box {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
